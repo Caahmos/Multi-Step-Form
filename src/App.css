@@ -1,0 +1,118 @@
+.app {
+    padding: 2rem;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form_container{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: rgba(100,100,111, .2) 0px 7px 29px 0px;
+}
+
+.form_container form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.inputs_container {
+    min-height: 290px;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    margin-bottom: 1.6rem;
+}
+
+label{
+    font-weight: bold;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+input, textarea {
+    padding: .6rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0;
+}
+
+textarea {
+    height: 120px;
+}
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.actions button{
+    font-size: .9rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 0.5 rem;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #dfdfdf;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.actions button:hover {
+    background-color: #cfcfcf;
+}
+
+.steps{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.steps::after{
+    content: "";
+    width: 380px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 20px
+}
+
+.step{
+    text-align: center;
+    background-color: #fff;
+    z-index: 1;
+    width: 120px;
+    padding: 0.5rem
+}
+
+.step svg {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.steps .active{
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.active > svg {
+    fill: #7076f4
+}
